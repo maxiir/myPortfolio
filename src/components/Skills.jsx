@@ -1,3 +1,4 @@
+'use client'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faJs, faNodeJs, faReact, faGitAlt, faPython} from '@fortawesome/free-brands-svg-icons'
 import { TbBrandAstro } from "react-icons/tb";
