@@ -7,8 +7,9 @@ function Presentacion() {
       <div className="block justify-between items-center lg:flex">
         <img src='/perfilCV.jpg' className='w-80 m-5 rounded-full border-4 border-green-300'/>
         <div>
-          <h1 className="text-white text-left text-5xl m-5">Hola soy Maxi!</h1>
-          <p className='text-white text-xs text-left m-5 md:text-sm'>Soy un programador web con experiencia en el desarrollo de aplicaciones utilizando el stack MERN (MongoDB, Express.js, React.js y Node.js). También tengo conocimientos en Git y en otras tecnologías relacionadas con el desarrollo web. Estoy comprometido con aprender y crecer en mi carrera, y siempre estoy buscando nuevos desafíos y oportunidades para mejorar mis habilidades. Estoy emocionado de poder aplicar mis conocimientos y experiencia para contribuir al éxito de un equipo y a la creación de soluciones innovadoras para los clientes.</p>
+          <h1 className="text-white text-left text-5xl m-5">Hola me llamo Maximiliano Rucci</h1>
+          <p className="text-orange-500 text-2xl text-left m-5">DESARROLLADOR WEB FULL STACK</p>
+          <p className='text-white text-xs text-left m-5 md:text-lg'>Soy programador con experiencia tanto en desarrollo frontend como backend. Mi enfoque es contribuir al éxito de los equipos en los que trabajo, creando soluciones innovadoras y efectivas para los clientes. Me entusiasma aplicar mis conocimientos y seguir creciendo en el mundo del desarrollo web.</p>
         </div>
       </div>
     </div>

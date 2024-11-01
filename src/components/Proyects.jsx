@@ -12,16 +12,18 @@ function Proyects() {
             <a href="https://www.nordicasocks.shop/"><button className="bg-blue-500 hover:bg-blue-700 p-2 m-5 rounded-md w-40">Ver</button></a>
           </div>
           <div className="bg-black rounded-xl p-2 my-10 transition-all transform hover:scale-105 md:my-0">
-            <img className="rounded-md" src="/estudioContable.png"></img>
-            <h1 className="my-5">Sitio web estudio contable</h1>
-            <p className="p-5">Desarrolle un sitio web para un estudio jurídico con el objetivo de ampliar su alcance y brindar una presencia en línea para captar nuevos clientes.</p>
+            <img className="rounded-md" src="/visionWeb.png"></img>
+            <h1 className="my-5">Landing Page de servicio profesional</h1>
+            <p className="p-5">Diseñé una landing page para ofrecer mis servicios como desarrollador web, con un diseño moderno y responsivo. Incluye secciones de "Caracteristicas", "Planes", "Preguntas Frecuentes", además de un acceso rápido a WhatsApp. Esta landing page destaca mis habilidades y facilita la conexión con clientes potenciales, optimizando la conversión de visitas en oportunidades reales.</p>
             <a href="https://estudiocontablecontable.vercel.app/"><button className="bg-blue-500 p-2 m-5 rounded-md w-40">Ver</button></a>
           </div>
           <div className="bg-black rounded-xl p-2 m-10 transition-all transform hover:scale-105 md:my-0">
-            <img className="rounded-md" src="/sec.png"></img>
-            <h1 className="my-5">Proyecto en Wordpress</h1>
-            <p className="p-5">Actualice y mejore el sitio web utilizando WordPress. Implementando nuevas funcionalidades y características, mejorando su accesibilidad. Además, trabajé en la actualización del diseño y la estructura del contenido para reflejar de manera más efectiva la identidad de la institución y cumplir con los objetivos establecidos.</p>
-            <a href="https://www.sectw.com.ar/"><button className="bg-blue-500 p-2 m-5 rounded-md w-40">Ver</button></a>
+            <img className="rounded-md" src="/myTasks.png"></img>
+            <h1 className="my-5">Proyecto de Gestión de Tareas en Next.js</h1>
+            <p className="p-5">
+              Este proyecto en Next.js implementa un sistema CRUD para gestión de tareas con registro y autenticación de usuarios, permitiendo crear, gestionar y actualizar tareas propias. Cuenta con una interfaz responsiva, API REST, autenticación con sesiones y tokens, y validación de datos en frontend y backend.
+            </p>
+            <a href="#"><button className="bg-blue-500 p-2 m-5 rounded-md w-40">Ver</button></a>
           </div>
         </div>
     </div>

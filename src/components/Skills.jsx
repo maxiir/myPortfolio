@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faJs, faWordpress, faNodeJs, faReact, faGitAlt, faPython} from '@fortawesome/free-brands-svg-icons'
-
+import { faJs, faNodeJs, faReact, faGitAlt, faPython} from '@fortawesome/free-brands-svg-icons'
+import { TbBrandAstro } from "react-icons/tb";
+// import { TbBrandTypescript } from "react-icons/tb";
 
 function Skills() {
   return (
@@ -11,7 +12,7 @@ function Skills() {
           <div className='grid grid-cols-3'>
             <i className='text-gray-300 hover:text-yellow-300 text-5xl p-10 transition-all transform hover:scale-125 '><FontAwesomeIcon icon={faJs}/></i>
             <i className='text-gray-300 hover:text-green-500 text-5xl p-10 transition-all transform hover:scale-125'><FontAwesomeIcon icon={faNodeJs}/></i>
-            <i className='text-gray-300 hover:text-blue-400 text-5xl p-10 transition-all transform hover:scale-125'><FontAwesomeIcon icon={faWordpress}/></i>
+            <i className='text-gray-300 hover:text-orange-400 text-5xl p-10 transition-all transform hover:scale-125'><TbBrandAstro className=""/></i>
             <i className='text-gray-300 hover:text-blue-500 text-5xl p-10 transition-all transform hover:scale-125'><FontAwesomeIcon icon={faReact}/></i>
             <i className='text-gray-300 hover:text-orange-500 text-5xl p-10 transition-all transform hover:scale-125'><FontAwesomeIcon icon={faGitAlt}/></i>
             <i className='text-gray-300 hover:text-blue-300 text-5xl p-10 transition-all transform hover:scale-125'><FontAwesomeIcon icon={faPython}/></i>             
