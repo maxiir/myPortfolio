@@ -1,5 +1,5 @@
 'use client'
-import Nav from '../components/Nav'
+import Nav from '@/components/Nav'
 import Presentacion from '@/components/Presentacion'
 import Skills from '@/components/Skills'
 import Proyects from '@/components/Proyects'
@@ -7,12 +7,14 @@ import CvDownload from '@/components/CvDownload'
 import Footer from '@/components/Footer'
 import Contact from '@/components/Contact'
 import { useEffect } from 'react'
-import ScrollReveal from 'scrollreveal'
+// import ScrollReveal from 'scrollreveal'
 
+import dynamic from 'next/dynamic'
+const ScrollReveal = dynamic(() => import('scrollreveal'), { ssr: false });
 
 // import {  } from '@fortawesome/free-brands-svg-icons'
 
-function home() {
+function Page() {
   useEffect(() => {
     ScrollReveal().reveal('.reveal', {
       distance: '80px',
@@ -45,4 +47,4 @@ function home() {
   )
 }
 
-export default home
+export default Page
