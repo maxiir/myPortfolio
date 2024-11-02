@@ -9,7 +9,7 @@ function Proyects() {
             <img className="rounded-md" src="/nordica.png"></img>
             <h1 className="my-5">Ecommerce para emprendimiento</h1>
             <p className="p-5">El sitio web ecommerce, fue desarrollado con la finalidad de que el emprendimiento tenga un mayor numero de ventas en linea y fue desarrollado con react y nodejs garantizando una solucion escalable y atractiva para los usuarios</p>
-            <a href="https://www.nordicasocks.shop/"><button className="bg-blue-500 hover:bg-blue-700 p-2 m-5 rounded-md w-40">Ver</button></a>
+            <a href="https://www.nordicasocks.shop/"><button className="bg-blue-500 mt-20 hover:bg-blue-700 p-2  rounded-md w-40">Ver</button></a>
           </div>
           <div className="bg-black rounded-xl p-2 my-10 transition-all transform hover:scale-105 md:my-0">
             <img className="rounded-md" src="/visionWeb.png"></img>
@@ -23,7 +23,7 @@ function Proyects() {
             <p className="p-5">
               Este proyecto en Next.js implementa un sistema CRUD para gestión de tareas con registro y autenticación de usuarios, permitiendo crear, gestionar y actualizar tareas propias. Cuenta con una interfaz responsiva, API REST, autenticación con sesiones y tokens, y validación de datos en frontend y backend.
             </p>
-            <a href="https://my-tasks-three-iota.vercel.app/"><button className="bg-blue-500 p-2 m-5 rounded-md w-40">Ver</button></a>
+            <a href="https://my-tasks-three-iota.vercel.app/"><button className="bg-blue-500 mt-12 p-2 rounded-md w-40">Ver</button></a>
           </div>
         </div>
     </div>

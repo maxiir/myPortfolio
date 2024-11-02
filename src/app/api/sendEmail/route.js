@@ -3,15 +3,31 @@ import transporter from "@/config/config_nodemailer";
 import { NextResponse } from "next/server";
 
 export async function POST(request) {
-  const { email, name, lastName, phone, query } = await request.json();
-  // console.log(email, name, lastName, phone, query)
-  const myEmail = {
-    from: "Tienes una consulta de la web <maxiirucci@gmail.com>",
-    to: "maxiirucci@gmail.com",
-    subject: "Hay una consulta desde la web",
-    html: `<div classname={p-5}>Datos:<br><strong>Mail:</strong>${email}<br> <strong>Nombre y apellido:</strong> ${name} ${lastName}<br><strong>Telefono:</strong> ${phone}<br> <strong>Consulta:</strong> ${query}</div>`,
-  };
-  await transporter.sendMail(myEmail);
+  try {
+    const { Email, Name, LastName, Number, Query } = await request.json();
+    if(!Email || !Name || !LastName || !Number || !Query){
+      return NextResponse.json({message:"Datos incompletos"}, {status:400})
+    }
+    const sendEmail = {
+      from: "Tienes una consulta desde tu portafolio <maxiirucci@gmail.com>",
+      to: "maxiirucci@gmail.com",
+      subject: "Hay una consulta desde el portafolio",
+      html: `
+        <div class= "p-5">
+          Datos:<br>
+          <strong>Mail:</strong>${Email}<br>
+          <strong>Nombre y apellido:</strong> ${Name} ${LastName}<br>
+          <strong>Telefono:</strong> ${Number}<br>
+          <strong>Consulta:</strong> ${Query}
+        </div>
+        `,
+    };
 
-  return NextResponse.json({ message: "datos enviados" });
+    await transporter.sendMail(sendEmail);
+    return NextResponse.json({message: "Consulta enviada con exito!"}, {status:200})
+    
+  } catch (error) {
+    console.error("Error al enviar el email", error)
+    return NextResponse.json({message:"Error en el servidor"}, {status:500})
+  }
 }
