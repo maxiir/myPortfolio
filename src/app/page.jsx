@@ -6,39 +6,25 @@ import Proyects from '@/components/Proyects'
 import CvDownload from '@/components/CvDownload'
 import Footer from '@/components/Footer'
 import Contact from '@/components/Contact'
-import { useEffect } from 'react'
-// import ScrollReveal from 'scrollreveal'
 
-import dynamic from 'next/dynamic'
-const ScrollReveal = dynamic(() => import('scrollreveal'), { ssr: false });
-
-// import {  } from '@fortawesome/free-brands-svg-icons'
 
 function Page() {
-  useEffect(() => {
-    ScrollReveal().reveal('.reveal', {
-      distance: '80px',
-      duration: 1200,
-      origin: 'left',
-      reset: false
-    })
-  }, [])
 
   return (
     <div>
       <Nav/>
       <div className='text-center mx-5 py-24'>
-        <div id='about' className='reveal'>
+        <div id='about'>
           <Presentacion/>
         </div>
-        <div id='skills' className='reveal'>
+        <div id='skills'>
           <Skills />
         </div>
-        <div id='proyects' className='reveal'>
+        <div id='proyects'>
           <Proyects/>              
         </div>
       </div>
-      <div id='contact' className='reveal'>
+      <div id='contact'>
         <Contact/>
       </div>
       <CvDownload/>
